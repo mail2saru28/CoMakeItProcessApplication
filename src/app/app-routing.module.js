@@ -9,11 +9,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var roleCategorylist_component_1 = require("./RoleCategory/roleCategorylist.component");
+var app_component_1 = require("./app.component");
 var appRoutes = [
     {
-        path: 'list',
-        redirectTo: '',
+        path: 'roleCategoryList',
         component: roleCategorylist_component_1.RoleCategoryListComponent
+    },
+    {
+        path: 'home',
+        component: app_component_1.AppComponent
     },
 ];
 var AppRoutingModule = /** @class */ (function () {

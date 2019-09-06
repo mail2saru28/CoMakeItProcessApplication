@@ -12,14 +12,15 @@ var app_component_1 = require("./app.component");
 var roleCategorylist_component_1 = require("./RoleCategory/roleCategorylist.component");
 var app_routing_module_1 = require("./app-routing.module");
 var forms_1 = require("@angular/forms");
+var home_component_1 = require("./Home/home.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, forms_1.ReactiveFormsModule, app_routing_module_1.AppRoutingModule],
-            declarations: [app_component_1.AppComponent, roleCategorylist_component_1.RoleCategoryListComponent],
-            bootstrap: [app_component_1.AppComponent,]
+            declarations: [app_component_1.AppComponent, roleCategorylist_component_1.RoleCategoryListComponent, home_component_1.HomeComponent],
+            bootstrap: [home_component_1.HomeComponent,]
         })
     ], AppModule);
     return AppModule;

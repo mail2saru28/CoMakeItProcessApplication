@@ -85,6 +85,7 @@
     <Content Include="images\bg-01.jpg" />
     <Content Include="images\bg-02.jpg" />
     <Content Include="src\app\app.component.html" />
+    <Content Include="src\app\Home\home.component.html" />
     <Content Include="src\app\RoleCategory\roleCategorylist.Component.html" />
     <Content Include="src\assests\css\all.css" />
     <Content Include="src\assests\webfonts\fa-brands-400.svg" />
@@ -235,6 +236,7 @@
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\Role.ts" />
+    <TypeScriptCompile Include="src\app\Home\home.component.ts" />
     <TypeScriptCompile Include="src\app\RoleCategory\roleCategorylist.component.ts" />
     <TypeScriptCompile Include="src\app\RoleTypes.ts" />
     <TypeScriptCompile Include="src\main.ts" />

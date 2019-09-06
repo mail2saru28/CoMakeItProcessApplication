@@ -10,35 +10,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var RoleTypes_1 = require("./RoleTypes");
 var router_1 = require("@angular/router");
 var router_2 = require("@angular/router");
-var AppComponent = /** @class */ (function () {
-    function AppComponent(router, routes) {
+var HomeComponent = /** @class */ (function () {
+    function HomeComponent(router, routes) {
         this.router = router;
         this.routes = routes;
-        this.name = 'Angular';
-        this.roles = RoleTypes_1.Roles;
-        this.roleCategoryTypes = RoleTypes_1.RoleCategoryTypes;
-        this.isHidden = true;
     }
-    AppComponent.prototype.ngOnInit = function () { console.log('app component'); };
-    AppComponent.prototype.onSelect = function (role) {
-        this.isHidden = !this.isHidden;
-        this.selectedRole = role;
-    };
-    AppComponent.prototype.OnSelectCategory = function (roleCategory) {
-        this.selectedCategory = roleCategory;
-        this.router.navigate(['/roleCategoryList']);
-    };
-    AppComponent = __decorate([
+    HomeComponent.prototype.ngOnInit = function () { console.log('home component'); };
+    HomeComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'app/app.component.html'
+            selector: 'my-home',
+            templateUrl: 'app/Home/home.component.html'
         }),
         __metadata("design:paramtypes", [router_2.Router, router_1.ActivatedRoute])
-    ], AppComponent);
-    return AppComponent;
+    ], HomeComponent);
+    return HomeComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.HomeComponent = HomeComponent;
+//# sourceMappingURL=home.component.js.map

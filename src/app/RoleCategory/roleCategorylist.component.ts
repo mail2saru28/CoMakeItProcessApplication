@@ -2,7 +2,7 @@
 @Component({
 
     selector: 'roleCategory-list',
-    templateUrl:'./roleCategorylist.component.html'
+    template:'<h1>hi </h1>'
 })
 
 export class RoleCategoryListComponent implements OnInit
@@ -10,6 +10,6 @@ export class RoleCategoryListComponent implements OnInit
     constructor() { }
     ngOnInit()
     {
-
+        console.log('cat component');
     }
 }

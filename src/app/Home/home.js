@@ -10,20 +10,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var RoleCategoryListComponent = /** @class */ (function () {
-    function RoleCategoryListComponent() {
+var HomeComponent = /** @class */ (function () {
+    function HomeComponent() {
+        this.name = 'Angular';
     }
-    RoleCategoryListComponent.prototype.ngOnInit = function () {
-        console.log('cat component');
-    };
-    RoleCategoryListComponent = __decorate([
+    HomeComponent.prototype.ngOnInit = function () { console.log('home component'); };
+    HomeComponent = __decorate([
         core_1.Component({
-            selector: 'roleCategory-list',
-            template: '<h1>hi </h1>'
+            selector: 'my-home',
+            templateUrl: '/home.html'
         }),
         __metadata("design:paramtypes", [])
-    ], RoleCategoryListComponent);
-    return RoleCategoryListComponent;
+    ], HomeComponent);
+    return HomeComponent;
 }());
-exports.RoleCategoryListComponent = RoleCategoryListComponent;
-//# sourceMappingURL=roleCategorylist.component.js.map
+exports.HomeComponent = HomeComponent;
+//# sourceMappingURL=home.js.map

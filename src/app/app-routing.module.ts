@@ -1,13 +1,24 @@
 ﻿import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { RoleCategoryListComponent } from './RoleCategory/roleCategorylist.component';
+import { AppComponent } from './app.component';
+import { HomeComponent } from './Home/home.component';
 const appRoutes: Routes = [
     {
-        path: 'list',
-        redirectTo: '',
+        path: 'roleCategoryList',
         component: RoleCategoryListComponent
-    },
 
+    },
+    {
+        path: 'home',
+        component: AppComponent
+
+    },
+    //{
+    //    path: 'home',
+    //    component: HomeComponent
+
+    //},
 ];
 @NgModule({
     imports: [
