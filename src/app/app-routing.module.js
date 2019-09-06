@@ -7,22 +7,29 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var app_component_1 = require("./app.component");
+var router_1 = require("@angular/router");
 var roleCategorylist_component_1 = require("./RoleCategory/roleCategorylist.component");
-var app_routing_module_1 = require("./app-routing.module");
-var forms_1 = require("@angular/forms");
-var AppModule = /** @class */ (function () {
-    function AppModule() {
+var appRoutes = [
+    {
+        path: 'list',
+        redirectTo: '',
+        component: roleCategorylist_component_1.RoleCategoryListComponent
+    },
+];
+var AppRoutingModule = /** @class */ (function () {
+    function AppRoutingModule() {
     }
-    AppModule = __decorate([
+    AppRoutingModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, forms_1.ReactiveFormsModule, app_routing_module_1.AppRoutingModule],
-            declarations: [app_component_1.AppComponent, roleCategorylist_component_1.RoleCategoryListComponent],
-            bootstrap: [app_component_1.AppComponent,]
+            imports: [
+                router_1.RouterModule.forRoot(appRoutes, { enableTracing: true })
+            ],
+            exports: [
+                router_1.RouterModule
+            ]
         })
-    ], AppModule);
-    return AppModule;
+    ], AppRoutingModule);
+    return AppRoutingModule;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.AppRoutingModule = AppRoutingModule;
+//# sourceMappingURL=app-routing.module.js.map

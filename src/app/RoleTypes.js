@@ -4,6 +4,10 @@ exports.Roles = [
     { id: 1, name: 'Product Owner' },
     { id: 2, name: 'Architect' },
     { id: 3, name: 'Developer' },
-    { id: 4, name: 'QA' },
+    { id: 4, name: 'QA' }
+];
+exports.RoleCategoryTypes = [
+    { id: 1, name: 'Jump Start' },
+    { id: 2, name: 'App Modernization' },
 ];
 //# sourceMappingURL=RoleTypes.js.map

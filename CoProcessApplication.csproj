@@ -83,7 +83,13 @@
     <Content Include="fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.svg" />
     <Content Include="fonts\ubuntu\UFL.txt" />
     <Content Include="images\bg-01.jpg" />
+    <Content Include="images\bg-02.jpg" />
     <Content Include="src\app\app.component.html" />
+    <Content Include="src\app\RoleCategory\roleCategorylist.Component.html" />
+    <Content Include="src\assests\css\all.css" />
+    <Content Include="src\assests\webfonts\fa-brands-400.svg" />
+    <Content Include="src\assests\webfonts\fa-regular-400.svg" />
+    <Content Include="src\assests\webfonts\fa-solid-900.svg" />
     <Content Include="src\favicon.ico" />
     <Content Include="src\index.html" />
     <Content Include="src\styles.css" />
@@ -204,6 +210,18 @@
     <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
     <Content Include="vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="src\assests\webfonts\fa-brands-400.eot" />
+    <Content Include="src\assests\webfonts\fa-brands-400.ttf" />
+    <Content Include="src\assests\webfonts\fa-brands-400.woff" />
+    <Content Include="src\assests\webfonts\fa-brands-400.woff2" />
+    <Content Include="src\assests\webfonts\fa-regular-400.eot" />
+    <Content Include="src\assests\webfonts\fa-regular-400.ttf" />
+    <Content Include="src\assests\webfonts\fa-regular-400.woff" />
+    <Content Include="src\assests\webfonts\fa-regular-400.woff2" />
+    <Content Include="src\assests\webfonts\fa-solid-900.eot" />
+    <Content Include="src\assests\webfonts\fa-solid-900.ttf" />
+    <Content Include="src\assests\webfonts\fa-solid-900.woff" />
+    <Content Include="src\assests\webfonts\fa-solid-900.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -212,15 +230,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="src\app\app-routing.module.ts" />
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\Role.ts" />
+    <TypeScriptCompile Include="src\app\RoleCategory\roleCategorylist.component.ts" />
     <TypeScriptCompile Include="src\app\RoleTypes.ts" />
     <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\app\RoleCategory\roleCategory.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
